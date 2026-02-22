@@ -6,17 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B2F4F12D2F4B8FE70054508D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F4F12A2F4B8FE70054508D /* ContentView.swift */; };
+		B2F4F12E2F4B8FE70054508D /* MensurARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F4F12B2F4B8FE70054508D /* MensurARApp.swift */; };
+		B2F4F12F2F4B8FE70054508D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F4F1292F4B8FE70054508D /* Assets.xcassets */; };
+		B2F4F1312F4B90160054508D /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F4F1302F4B900D0054508D /* ARViewContainer.swift */; };
+		B2F4F1352F4B9BBF0054508D /* robot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B2F4F1342F4B9BBF0054508D /* robot.usdz */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B2F4F11B2F4B8BEC0054508D /* MensurAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MensurAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F4F1292F4B8FE70054508D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2F4F12A2F4B8FE70054508D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B2F4F12B2F4B8FE70054508D /* MensurARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensurARApp.swift; sourceTree = "<group>"; };
+		B2F4F1302F4B900D0054508D /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		B2F4F1342F4B9BBF0054508D /* robot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = robot.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B2F4F11D2F4B8BEC0054508D /* MensurAR */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MensurAR;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B2F4F1182F4B8BEC0054508D /* Frameworks */ = {
@@ -32,7 +37,7 @@
 		B2F4F1122F4B8BEC0054508D = {
 			isa = PBXGroup;
 			children = (
-				B2F4F11D2F4B8BEC0054508D /* MensurAR */,
+				B2F4F12C2F4B8FE70054508D /* MensurAR */,
 				B2F4F11C2F4B8BEC0054508D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +48,18 @@
 				B2F4F11B2F4B8BEC0054508D /* MensurAR.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B2F4F12C2F4B8FE70054508D /* MensurAR */ = {
+			isa = PBXGroup;
+			children = (
+				B2F4F1302F4B900D0054508D /* ARViewContainer.swift */,
+				B2F4F1292F4B8FE70054508D /* Assets.xcassets */,
+				B2F4F12A2F4B8FE70054508D /* ContentView.swift */,
+				B2F4F12B2F4B8FE70054508D /* MensurARApp.swift */,
+				B2F4F1342F4B9BBF0054508D /* robot.usdz */,
+			);
+			path = MensurAR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +76,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B2F4F11D2F4B8BEC0054508D /* MensurAR */,
 			);
 			name = MensurAR;
 			packageProductDependencies = (
@@ -109,6 +123,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F4F1352F4B9BBF0054508D /* robot.usdz in Resources */,
+				B2F4F12F2F4B8FE70054508D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +135,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F4F12D2F4B8FE70054508D /* ContentView.swift in Sources */,
+				B2F4F12E2F4B8FE70054508D /* MensurARApp.swift in Sources */,
+				B2F4F1312F4B90160054508D /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +275,7 @@
 				DEVELOPMENT_TEAM = 5W8NUH4ZAU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to place 3D objects in AR";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +308,7 @@
 				DEVELOPMENT_TEAM = 5W8NUH4ZAU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to place 3D objects in AR";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
