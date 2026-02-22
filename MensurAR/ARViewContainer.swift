@@ -69,14 +69,13 @@ struct ARViewContainer: UIViewRepresentable {
                 return
             }
             
-            // load 3d model
-            guard let modelEntity = try? ModelEntity.loadModel(named: "robot") else {
-                print("Failed to load 3D model. Check that robot.usdz is in your project.")
-                return
-            }
+            // Create Sphere
+            let sphereMesh = MeshResource.generateSphere(radius: 0.01)
+            let sphereMaterial = SimpleMaterial(color: .yellow, isMetallic: false)
+            let modelEntity = ModelEntity(mesh: sphereMesh, materials: [sphereMaterial])
+            
             
             // scale model
-            modelEntity.scale = [0.01, 0.01, 0.01]
             modelEntity.generateCollisionShapes(recursive: true)
             
             // create the anchor
